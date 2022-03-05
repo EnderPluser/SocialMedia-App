@@ -1,0 +1,14 @@
+workflows:
+  my-workflow:
+    instance_type: mac_mini
+    environment:
+      flutter: beta
+      ndk: r23
+      xcode: 12.5
+      java: 1.8
+    scripts:
+      - name: Build Android APK
+        working_directory: android
+        script: gradlew assembleRelease
+    artifacts:
+      - app/build/outputs/**/**/*.apk
