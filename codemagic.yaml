@@ -3,7 +3,7 @@ workflows:
     instance_type: mac_mini
     environment:
       flutter: beta
-      ndk: r23
+      ndk: 23
       xcode: 12.5
       java: 1.8
     scripts:
