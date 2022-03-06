@@ -32,6 +32,12 @@ android {
         main.java.srcDirs += 'src/main/kotlin'
     }
 
+allprojects {
+tasks.withType(JavaCompile) {
+    options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+   }
+}
+
     lintOptions {
         disable 'InvalidPackage'
     }
