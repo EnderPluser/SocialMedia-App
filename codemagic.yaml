@@ -7,7 +7,7 @@ workflows:
       xcode: 12.5
       java: 1.8
     scripts:
-      - name: Directory
+      - name: Build Android APK
         working_directory: android
       - name: Build with Gradle
         script: gradle build
