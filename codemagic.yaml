@@ -11,6 +11,7 @@ workflows:
         working_directory: android
       - name: Build with Gradle
         script: gradle build
+      - name: Build Android APK
         script: gradle assembleDebug
     artifacts:
       - app/build/outputs/**/**/*.apk
